@@ -3,7 +3,7 @@ let express = require('express'),
     mongoose = require('mongoose'),
     cors = require('cors'),
     bodyParser = require('body-parser'),
-    mongoDb = require('./database/db');
+    mongoDb = require('../database/db');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoDb.db, {

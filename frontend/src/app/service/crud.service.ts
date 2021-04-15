@@ -45,7 +45,7 @@ export class CrudService {
 
   // Update
   updateBook(id:any, data:any): Observable<any> {
-    let API_URL = `${this.REST_API}/delete-book/${id}`;
+    let API_URL = `${this.REST_API}/update-book/${id}`;
     return this.httpClient.put(API_URL,data, { headers: this.httpHeaders})
     .pipe(
       catchError(this.handleError)
